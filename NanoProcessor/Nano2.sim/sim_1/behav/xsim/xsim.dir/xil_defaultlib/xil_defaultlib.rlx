@@ -1,0 +1,23 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sim_1/new/TB_nanoprocessor.vhd,1747369726,vhdl,,,,tb_nanoprocessor,,,,,,,,
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/imports/new/D_FF.vhd,1747376504,vhdl,,,,d_ff,,,,,,,,
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Adder_Subtractor.vhd,1747367098,vhdl,,,,adder_subtractor,,,,,,,,
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Decoder_2_to_4.vhd,1747367098,vhdl,,,,decoder_2_to_4,,,,,,,,
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Decoder_3_to_8.vhd,1747367098,vhdl,,,,decoder_3_to_8,,,,,,,,
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/FA.vhd,1747367098,vhdl,,,,fa,,,,,,,,
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/HA.vhd,1747367098,vhdl,,,,ha,,,,,,,,
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Instruction_Decorder.vhd,1747575048,vhdl,,,,instruction_decoder,,,,,,,,
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/LUT_16_7.vhd,1747367098,vhdl,,,,lut_16_7,,,,,,,,
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/MUX_2way_3bit.vhd,1747367098,vhdl,,,,mux_2way_3bit,,,,,,,,
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/MUX_2way_4bit.vhd,1747367098,vhdl,,,,mux_2way_4bit,,,,,,,,
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/MUX_8way_4bit.vhd,1747367098,vhdl,,,,mux_8way_4bit,,,,,,,,
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/ProgramCounter.vhd,1747367098,vhdl,,,,programcounter,,,,,,,,
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RCA_3.vhd,1747367098,vhdl,,,,rca_3,,,,,,,,
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/ROM.vhd,1747575284,vhdl,,,,rom,,,,,,,,
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Reg.vhd,1747367098,vhdl,,,,reg,,,,,,,,
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RegBank.vhd,1747367098,vhdl,,,,regbank,,,,,,,,
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Slow_Clk.vhd,1747367098,vhdl,,,,slow_clk,,,,,,,,
+C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/nanoprocessor.vhd,1747368430,vhdl,,,,nanoprocessor,,,,,,,,

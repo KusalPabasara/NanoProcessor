@@ -1,0 +1,46 @@
+The following are the additional instructions we included in the Improved Processor. Assembly instruction for each of them are included here. 
+
+14bit instructions. 1st 4bits for instruction type.
+ 
+Logical Operations
+------------------
+get results from RA and RB perform the operation and save in Rd(destination)
+
+AND RA,RB,Rd   
+0100 RARARA RBRBRB RdRdRdRd
+
+OR  RA,RB,Rd
+0101 RARARA RBRBRB RdRdRdRd
+   
+XOR RA,RB,Rd
+0110 RARARA RBRBRB RdRdRdRd
+
+NOT RA,Rd      perform not logic to value in RA and store in Rd 
+0111 RARARA 000 RdRdRdRd
+
+Shift  Operations
+------------------
+
+Shift the contents of register Rs left by n positions and store the result in register Rd.
+SHL Rd, Rs, n
+1000 RdRdRd RsRsRs 00nn
+
+Shift the contents of register Rs right by n positions and store the result in register Rd
+1001 RdRdRd RsRsRs 00nn
+
+Rotate Operations
+------------------
+
+Rotate the contents of register Rs left by n positions and store the result in register Rd
+1010 RdRdRd RsRsRs 00nn
+
+Rotate the contents of register Rs right by n positions and store the result in register Rd.
+1011 RdRdRd RsRsRs 00nn
+
+Normal instructions
+-------------------
+
+0000 ADD
+0001 NEG
+0010 MOV
+0011 JRZ

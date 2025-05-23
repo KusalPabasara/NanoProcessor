@@ -1,0 +1,12 @@
+1) LEDs connected to R7 
+   "V19" = 4th bit
+   "U19" = 3rd bit
+   "E19" = 2nd bit
+   "U16" = 1st bit
+
+
+2) Flags
+   "L1" = overflow
+   "P1" = zero flag
+   "N3" = carry flag
+   "P3" = sign flag  

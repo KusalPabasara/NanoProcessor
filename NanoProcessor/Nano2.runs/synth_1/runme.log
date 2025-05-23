@@ -1,0 +1,459 @@
+
+*** Running vivado
+    with args -log nanoprocessor.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source nanoprocessor.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source nanoprocessor.tcl -notrace
+Command: synth_design -top nanoprocessor -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20024 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 382.977 ; gain = 98.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'nanoprocessor' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/nanoprocessor.vhd:39]
+INFO: [Synth 8-3491] module 'RegBank' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RegBank.vhd:25' bound to instance 'RegBank_0' of component 'RegBank' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/nanoprocessor.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'RegBank' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RegBank.vhd:40]
+INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Decoder_3_to_8.vhd:25' bound to instance 'Decoder_3_to_8_0' of component 'Decoder_3_to_8' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RegBank.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'Decoder_3_to_8' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Decoder_3_to_8.vhd:31]
+INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Decoder_2_to_4.vhd:25' bound to instance 'Decoder_2_to_4_0' of component 'Decoder_2_to_4' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Decoder_3_to_8.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'Decoder_2_to_4' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Decoder_2_to_4.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_2_to_4' (1#1) [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Decoder_2_to_4.vhd:31]
+INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Decoder_2_to_4.vhd:25' bound to instance 'Decoder_2_to_4_1' of component 'Decoder_2_to_4' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Decoder_3_to_8.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_3_to_8' (2#1) [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Decoder_3_to_8.vhd:31]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_1' of component 'Reg' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RegBank.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'Reg' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Reg.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Reg' (3#1) [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Reg.vhd:33]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_2' of component 'Reg' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RegBank.vhd:79]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_3' of component 'Reg' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RegBank.vhd:86]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_4' of component 'Reg' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RegBank.vhd:93]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_5' of component 'Reg' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RegBank.vhd:100]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_6' of component 'Reg' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RegBank.vhd:107]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Reg.vhd:25' bound to instance 'Reg_7' of component 'Reg' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RegBank.vhd:114]
+INFO: [Synth 8-256] done synthesizing module 'RegBank' (4#1) [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RegBank.vhd:40]
+INFO: [Synth 8-3491] module 'MUX_8way_4bit' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/MUX_8way_4bit.vhd:25' bound to instance 'MUX_8way_4bit_0' of component 'MUX_8way_4bit' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/nanoprocessor.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'MUX_8way_4bit' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/MUX_8way_4bit.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'MUX_8way_4bit' (5#1) [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/MUX_8way_4bit.vhd:39]
+INFO: [Synth 8-3491] module 'MUX_8way_4bit' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/MUX_8way_4bit.vhd:25' bound to instance 'MUX_8way_4bit_1' of component 'MUX_8way_4bit' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/nanoprocessor.vhd:197]
+INFO: [Synth 8-3491] module 'Adder_Subtractor' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Adder_Subtractor.vhd:4' bound to instance 'Adder_Subtractor_0' of component 'Adder_Subtractor' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/nanoprocessor.vhd:211]
+INFO: [Synth 8-638] synthesizing module 'Adder_Subtractor' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Adder_Subtractor.vhd:14]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/FA.vhd:4' bound to instance 'FA_0' of component 'FA' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Adder_Subtractor.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/FA.vhd:12]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/HA.vhd:7' bound to instance 'HA_0' of component 'HA' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/FA.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'HA' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/HA.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'HA' (6#1) [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/HA.vhd:14]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/HA.vhd:7' bound to instance 'HA_1' of component 'HA' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/FA.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'FA' (7#1) [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/FA.vhd:12]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/FA.vhd:4' bound to instance 'FA_1' of component 'FA' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Adder_Subtractor.vhd:41]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/FA.vhd:4' bound to instance 'FA_2' of component 'FA' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Adder_Subtractor.vhd:50]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/FA.vhd:4' bound to instance 'FA_3' of component 'FA' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Adder_Subtractor.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'Adder_Subtractor' (8#1) [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Adder_Subtractor.vhd:14]
+INFO: [Synth 8-3491] module 'MUX_2way_4bit' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/MUX_2way_4bit.vhd:25' bound to instance 'MUX_2way_4bit_0' of component 'MUX_2way_4bit' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/nanoprocessor.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'MUX_2way_4bit' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/MUX_2way_4bit.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'MUX_2way_4bit' (9#1) [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/MUX_2way_4bit.vhd:32]
+INFO: [Synth 8-3491] module 'Instruction_Decoder' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Instruction_Decorder.vhd:5' bound to instance 'Instruction_Decoder_0' of component 'Instruction_Decoder' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/nanoprocessor.vhd:232]
+INFO: [Synth 8-638] synthesizing module 'Instruction_Decoder' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Instruction_Decorder.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_Decoder' (10#1) [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Instruction_Decorder.vhd:20]
+INFO: [Synth 8-3491] module 'ROM' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/ROM.vhd:5' bound to instance 'ROM_0' of component 'ROM' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/nanoprocessor.vhd:249]
+INFO: [Synth 8-638] synthesizing module 'ROM' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/ROM.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (11#1) [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/ROM.vhd:10]
+INFO: [Synth 8-3491] module 'ProgramCounter' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/ProgramCounter.vhd:4' bound to instance 'ProgramCounter_0' of component 'ProgramCounter' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/nanoprocessor.vhd:254]
+INFO: [Synth 8-638] synthesizing module 'ProgramCounter' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/ProgramCounter.vhd:13]
+INFO: [Synth 8-3491] module 'D_FF' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/imports/new/D_FF.vhd:25' bound to instance 'U0' of component 'D_FF' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/ProgramCounter.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'D_FF' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/imports/new/D_FF.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'D_FF' (12#1) [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/imports/new/D_FF.vhd:34]
+INFO: [Synth 8-3491] module 'D_FF' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/imports/new/D_FF.vhd:25' bound to instance 'U1' of component 'D_FF' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/ProgramCounter.vhd:29]
+INFO: [Synth 8-3491] module 'D_FF' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/imports/new/D_FF.vhd:25' bound to instance 'U2' of component 'D_FF' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/ProgramCounter.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'ProgramCounter' (13#1) [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/ProgramCounter.vhd:13]
+INFO: [Synth 8-3491] module 'RCA_3' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RCA_3.vhd:4' bound to instance 'RCA_3_0' of component 'RCA_3' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/nanoprocessor.vhd:262]
+INFO: [Synth 8-638] synthesizing module 'RCA_3' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RCA_3.vhd:12]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/FA.vhd:4' bound to instance 'FA_0' of component 'FA' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RCA_3.vhd:26]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/FA.vhd:4' bound to instance 'FA_1' of component 'FA' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RCA_3.vhd:35]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/FA.vhd:4' bound to instance 'FA_2' of component 'FA' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RCA_3.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'RCA_3' (14#1) [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/RCA_3.vhd:12]
+INFO: [Synth 8-3491] module 'MUX_2way_3bit' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/MUX_2way_3bit.vhd:4' bound to instance 'MUX_2way_3bit_0' of component 'MUX_2way_3bit' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/nanoprocessor.vhd:271]
+INFO: [Synth 8-638] synthesizing module 'MUX_2way_3bit' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/MUX_2way_3bit.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'MUX_2way_3bit' (15#1) [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/MUX_2way_3bit.vhd:11]
+INFO: [Synth 8-3491] module 'Slow_Clk' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Slow_Clk.vhd:4' bound to instance 'Slow_Clk_0' of component 'Slow_Clk' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/nanoprocessor.vhd:279]
+INFO: [Synth 8-638] synthesizing module 'Slow_Clk' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Slow_Clk.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'Slow_Clk' (16#1) [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Slow_Clk.vhd:9]
+INFO: [Synth 8-3491] module 'LUT_16_7' declared at 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/LUT_16_7.vhd:26' bound to instance 'LUT_16_7_0' of component 'LUT_16_7' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/nanoprocessor.vhd:285]
+INFO: [Synth 8-638] synthesizing module 'LUT_16_7' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/LUT_16_7.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'LUT_16_7' (17#1) [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/LUT_16_7.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'nanoprocessor' (18#1) [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/nanoprocessor.vhd:39]
+WARNING: [Synth 8-3917] design nanoprocessor has port anode[3] driven by constant 1
+WARNING: [Synth 8-3917] design nanoprocessor has port anode[2] driven by constant 1
+WARNING: [Synth 8-3917] design nanoprocessor has port anode[1] driven by constant 1
+WARNING: [Synth 8-3917] design nanoprocessor has port anode[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 438.016 ; gain = 153.039
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 438.016 ; gain = 153.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 438.016 ; gain = 153.039
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/constrs_1/new/processor.xdc]
+Finished Parsing XDC File [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/constrs_1/new/processor.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/constrs_1/new/processor.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nanoprocessor_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/nanoprocessor_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 765.742 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 765.742 ; gain = 480.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 765.742 ; gain = 480.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 765.742 ; gain = 480.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "LoadSelect" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PROGRAM_ROM" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_status" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "sevenSegment_ROM" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'shiftL_reg' [C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.srcs/sources_1/new/Instruction_Decorder.vhd:90]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 765.742 ; gain = 480.766
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 19    
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 7     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   9 Input     14 Bit        Muxes := 1     
+	  17 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	  12 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module HA 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Adder_Subtractor 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
+Module MUX_2way_4bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module Instruction_Decoder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	  12 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module ROM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input     14 Bit        Muxes := 1     
+Module D_FF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module MUX_2way_3bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module Slow_Clk 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module LUT_16_7 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "Slow_Clk_0/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Slow_Clk_0/clk_status" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design nanoprocessor has port anode[3] driven by constant 1
+WARNING: [Synth 8-3917] design nanoprocessor has port anode[2] driven by constant 1
+WARNING: [Synth 8-3917] design nanoprocessor has port anode[1] driven by constant 1
+WARNING: [Synth 8-3917] design nanoprocessor has port anode[0] driven by constant 0
+WARNING: [Synth 8-3332] Sequential element (Instruction_Decoder_0/shiftL_reg[3]) is unused and will be removed from module nanoprocessor.
+WARNING: [Synth 8-3332] Sequential element (Instruction_Decoder_0/shiftL_reg[2]) is unused and will be removed from module nanoprocessor.
+WARNING: [Synth 8-3332] Sequential element (Instruction_Decoder_0/shiftL_reg[1]) is unused and will be removed from module nanoprocessor.
+WARNING: [Synth 8-3332] Sequential element (Instruction_Decoder_0/shiftL_reg[0]) is unused and will be removed from module nanoprocessor.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 765.742 ; gain = 480.766
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 765.742 ; gain = 480.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 784.473 ; gain = 499.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'RegBank_0/Reg_1/Q_reg[2]' (FDCE) to 'RegBank_0/Reg_2/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'RegBank_0/Reg_3/Q_reg[2]' (FDCE) to 'RegBank_0/Reg_2/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'RegBank_0/Reg_4/Q_reg[2]' (FDCE) to 'RegBank_0/Reg_2/Q_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RegBank_0/Reg_2/Q_reg[2] )
+INFO: [Synth 8-3886] merging instance 'RegBank_0/Reg_1/Q_reg[1]' (FDCE) to 'RegBank_0/Reg_2/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'RegBank_0/Reg_3/Q_reg[1]' (FDCE) to 'RegBank_0/Reg_2/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'RegBank_0/Reg_4/Q_reg[1]' (FDCE) to 'RegBank_0/Reg_2/Q_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RegBank_0/Reg_2/Q_reg[1] )
+INFO: [Synth 8-3886] merging instance 'RegBank_0/Reg_1/Q_reg[0]' (FDCE) to 'RegBank_0/Reg_2/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'RegBank_0/Reg_3/Q_reg[0]' (FDCE) to 'RegBank_0/Reg_2/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'RegBank_0/Reg_4/Q_reg[0]' (FDCE) to 'RegBank_0/Reg_2/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RegBank_0/Reg_2/Q_reg[0] )
+INFO: [Synth 8-3886] merging instance 'RegBank_0/Reg_1/Q_reg[3]' (FDCE) to 'RegBank_0/Reg_2/Q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'RegBank_0/Reg_3/Q_reg[3]' (FDCE) to 'RegBank_0/Reg_2/Q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'RegBank_0/Reg_4/Q_reg[3]' (FDCE) to 'RegBank_0/Reg_2/Q_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RegBank_0/Reg_2/Q_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (RegBank_0/Reg_5/Q_reg[3]) is unused and will be removed from module nanoprocessor.
+WARNING: [Synth 8-3332] Sequential element (RegBank_0/Reg_5/Q_reg[2]) is unused and will be removed from module nanoprocessor.
+WARNING: [Synth 8-3332] Sequential element (RegBank_0/Reg_5/Q_reg[1]) is unused and will be removed from module nanoprocessor.
+WARNING: [Synth 8-3332] Sequential element (RegBank_0/Reg_5/Q_reg[0]) is unused and will be removed from module nanoprocessor.
+WARNING: [Synth 8-3332] Sequential element (RegBank_0/Reg_2/Q_reg[2]) is unused and will be removed from module nanoprocessor.
+WARNING: [Synth 8-3332] Sequential element (RegBank_0/Reg_2/Q_reg[1]) is unused and will be removed from module nanoprocessor.
+WARNING: [Synth 8-3332] Sequential element (RegBank_0/Reg_2/Q_reg[0]) is unused and will be removed from module nanoprocessor.
+WARNING: [Synth 8-3332] Sequential element (RegBank_0/Reg_2/Q_reg[3]) is unused and will be removed from module nanoprocessor.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 785.289 ; gain = 500.312
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 785.289 ; gain = 500.312
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 785.289 ; gain = 500.312
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 785.289 ; gain = 500.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 785.289 ; gain = 500.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 785.289 ; gain = 500.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 785.289 ; gain = 500.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT2   |     1|
+|4     |LUT3   |     5|
+|5     |LUT4   |    21|
+|6     |LUT5   |     4|
+|7     |LUT6   |     7|
+|8     |FDCE   |     8|
+|9     |FDRE   |    37|
+|10    |IBUF   |     2|
+|11    |OBUF   |    19|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------+---------------+------+
+|      |Instance           |Module         |Cells |
++------+-------------------+---------------+------+
+|1     |top                |               |   113|
+|2     |  ProgramCounter_0 |ProgramCounter |    22|
+|3     |    U0             |D_FF           |    15|
+|4     |    U1             |D_FF_1         |     3|
+|5     |    U2             |D_FF_2         |     4|
+|6     |  RegBank_0        |RegBank        |    15|
+|7     |    Reg_6          |Reg            |     4|
+|8     |    Reg_7          |Reg_0          |    11|
+|9     |  Slow_Clk_0       |Slow_Clk       |    54|
++------+-------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 785.289 ; gain = 500.312
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 785.289 ; gain = 172.586
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 785.289 ; gain = 500.312
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+105 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 785.289 ; gain = 512.637
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sudil/Music/Improved Nano proc/Improved Nano proc/Improved Nano Proc Grp 17/Nano2.runs/synth_1/nanoprocessor.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file nanoprocessor_utilization_synth.rpt -pb nanoprocessor_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 785.289 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun May 18 19:05:18 2025...

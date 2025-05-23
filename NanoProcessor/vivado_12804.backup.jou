@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue May 13 00:55:46 2025
+# Process ID: 12804
+# Current directory: D:/maneesha/Nano2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6688 D:\maneesha\Nano2\Nano2.xpr
+# Log file: D:/maneesha/Nano2/vivado.log
+# Journal file: D:/maneesha/Nano2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/maneesha/Nano2/Nano2.xpr
+update_compile_order -fileset sources_1
+file mkdir D:/maneesha/Nano2/Nano2.srcs/constrs_1
+file mkdir D:/maneesha/Nano2/Nano2.srcs/constrs_1/new
+close [ open D:/maneesha/Nano2/Nano2.srcs/constrs_1/new/processor.xdc w ]
+add_files -fileset constrs_1 D:/maneesha/Nano2/Nano2.srcs/constrs_1/new/processor.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1

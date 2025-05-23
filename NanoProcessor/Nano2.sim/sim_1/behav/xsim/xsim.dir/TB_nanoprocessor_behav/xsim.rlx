@@ -1,0 +1,12 @@
+
+{ 
+    crc :  8467046947373891136  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 701096fe2465408e8a455c8cce45f39a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_nanoprocessor_behav xil_defaultlib.TB_nanoprocessor" , 
+    buildDate : "Jun 14 2018" , 
+    buildTime : "20:41:02" , 
+    linkCmd : "D:\\Vivado\\Vivado\\2018.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/TB_nanoprocessor_behav/xsimk.exe\"   \"xsim.dir/TB_nanoprocessor_behav/obj/xsim_0.win64.obj\" \"xsim.dir/TB_nanoprocessor_behav/obj/xsim_1.win64.obj\" \"D:\\Vivado\\Vivado\\2018.2\\lib\\win64.o\\\\librdi_simulator_kernel.dll\"  \"D:\\Vivado\\Vivado\\2018.2\\lib\\win64.o\\\\librdi_simbridge_kernel.dll\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

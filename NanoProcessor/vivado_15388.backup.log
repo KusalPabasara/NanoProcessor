@@ -1,0 +1,1373 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri May 16 09:15:12 2025
+# Process ID: 15388
+# Current directory: C:/Users/sudil/Music/Nano2t/Nano2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5608 C:\Users\sudil\Music\Nano2t\Nano2\Nano2.xpr
+# Log file: C:/Users/sudil/Music/Nano2t/Nano2/vivado.log
+# Journal file: C:/Users/sudil/Music/Nano2t/Nano2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sudil/Music/Nano2t/Nano2/Nano2.xpr
+INFO: [Project 1-313] Project file moved from 'D:/maneesha/Nano2' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'Nano2.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri May 16 09:16:38 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 09:17:07 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1760.078 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1760.078 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1887.656 ; gain = 955.008
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_nanoprocessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_nanoprocessor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/Adder_Subtractor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Adder_Subtractor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/D_FF.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity D_FF
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/Decoder_2_to_4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Decoder_2_to_4
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/Decoder_3_to_8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Decoder_3_to_8
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/FA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/HA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/Instruction_Decorder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Instruction_Decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/LUT_16_7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity LUT_16_7
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/MUX_2way_3bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2way_3bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/MUX_2way_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2way_4bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/MUX_8way_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_8way_4bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/ProgramCounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/RCA_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RCA_3
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/Reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Reg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/RegBank.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegBank
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/Slow_Clk.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Slow_Clk
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/nanoprocessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity nanoprocessor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sim_1/new/TB_nanoprocessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TB_nanoprocessor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 701096fe2465408e8a455c8cce45f39a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_nanoprocessor_behav xil_defaultlib.TB_nanoprocessor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegBank [regbank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8way_4bit [mux_8way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_Subtractor [adder_subtractor_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_4bit [mux_2way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture structural of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_3 [rca_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_3bit [mux_2way_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.LUT_16_7 [lut_16_7_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nanoprocessor
+Built simulation snapshot TB_nanoprocessor_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim/xsim.dir/TB_nanoprocessor_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri May 16 09:18:19 2025...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1891.551 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_nanoprocessor_behav -key {Behavioral:sim_1:Functional:TB_nanoprocessor} -tclbatch {TB_nanoprocessor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source TB_nanoprocessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_nanoprocessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1891.551 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri May 16 09:24:13 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 09:24:54 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1894.738 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1894.738 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_nanoprocessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_nanoprocessor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/Instruction_Decorder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Instruction_Decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/nanoprocessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity nanoprocessor
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 701096fe2465408e8a455c8cce45f39a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_nanoprocessor_behav xil_defaultlib.TB_nanoprocessor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2666] formal port mux1_out has no actual or default value [C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/Instruction_Decorder.vhd:12]
+ERROR: [VRFC 10-2666] formal port mux2_out has no actual or default value [C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/Instruction_Decorder.vhd:13]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_nanoprocessor in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri May 16 09:37:18 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 09:37:47 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1902.707 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1902.707 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_nanoprocessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_nanoprocessor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/nanoprocessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity nanoprocessor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 701096fe2465408e8a455c8cce45f39a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_nanoprocessor_behav xil_defaultlib.TB_nanoprocessor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegBank [regbank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8way_4bit [mux_8way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_Subtractor [adder_subtractor_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_4bit [mux_2way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture structural of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_3 [rca_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_3bit [mux_2way_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.LUT_16_7 [lut_16_7_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nanoprocessor
+Built simulation snapshot TB_nanoprocessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_nanoprocessor_behav -key {Behavioral:sim_1:Functional:TB_nanoprocessor} -tclbatch {TB_nanoprocessor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source TB_nanoprocessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_nanoprocessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1929.586 ; gain = 12.359
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri May 16 09:41:17 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 09:41:46 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1932.418 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1932.418 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_nanoprocessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_nanoprocessor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROM
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 701096fe2465408e8a455c8cce45f39a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_nanoprocessor_behav xil_defaultlib.TB_nanoprocessor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegBank [regbank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8way_4bit [mux_8way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_Subtractor [adder_subtractor_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_4bit [mux_2way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture structural of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_3 [rca_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_3bit [mux_2way_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.LUT_16_7 [lut_16_7_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nanoprocessor
+Built simulation snapshot TB_nanoprocessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_nanoprocessor_behav -key {Behavioral:sim_1:Functional:TB_nanoprocessor} -tclbatch {TB_nanoprocessor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source TB_nanoprocessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_nanoprocessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri May 16 09:58:47 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 09:59:38 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1950.547 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1950.547 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_nanoprocessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_nanoprocessor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sim_1/new/TB_nanoprocessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TB_nanoprocessor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 701096fe2465408e8a455c8cce45f39a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_nanoprocessor_behav xil_defaultlib.TB_nanoprocessor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegBank [regbank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8way_4bit [mux_8way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_Subtractor [adder_subtractor_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_4bit [mux_2way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture structural of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_3 [rca_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_3bit [mux_2way_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.LUT_16_7 [lut_16_7_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nanoprocessor
+Built simulation snapshot TB_nanoprocessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_nanoprocessor_behav -key {Behavioral:sim_1:Functional:TB_nanoprocessor} -tclbatch {TB_nanoprocessor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source TB_nanoprocessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_nanoprocessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri May 16 10:04:32 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri May 16 10:09:44 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 10:10:58 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1952.000 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1952.000 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_nanoprocessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_nanoprocessor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/Instruction_Decorder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Instruction_Decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROM
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 701096fe2465408e8a455c8cce45f39a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_nanoprocessor_behav xil_defaultlib.TB_nanoprocessor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegBank [regbank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8way_4bit [mux_8way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_Subtractor [adder_subtractor_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_4bit [mux_2way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture structural of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_3 [rca_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_3bit [mux_2way_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.LUT_16_7 [lut_16_7_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nanoprocessor
+Built simulation snapshot TB_nanoprocessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_nanoprocessor_behav -key {Behavioral:sim_1:Functional:TB_nanoprocessor} -tclbatch {TB_nanoprocessor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source TB_nanoprocessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_nanoprocessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri May 16 11:03:58 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 11:04:50 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1970.488 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1970.488 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_nanoprocessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_nanoprocessor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROM
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 701096fe2465408e8a455c8cce45f39a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_nanoprocessor_behav xil_defaultlib.TB_nanoprocessor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegBank [regbank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8way_4bit [mux_8way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_Subtractor [adder_subtractor_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_4bit [mux_2way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture structural of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_3 [rca_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_3bit [mux_2way_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.LUT_16_7 [lut_16_7_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nanoprocessor
+Built simulation snapshot TB_nanoprocessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_nanoprocessor_behav -key {Behavioral:sim_1:Functional:TB_nanoprocessor} -tclbatch {TB_nanoprocessor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source TB_nanoprocessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_nanoprocessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri May 16 11:09:29 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 11:11:03 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1985.078 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1985.078 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_nanoprocessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_nanoprocessor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROM
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 701096fe2465408e8a455c8cce45f39a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_nanoprocessor_behav xil_defaultlib.TB_nanoprocessor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegBank [regbank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8way_4bit [mux_8way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_Subtractor [adder_subtractor_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_4bit [mux_2way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture structural of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_3 [rca_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_3bit [mux_2way_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.LUT_16_7 [lut_16_7_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nanoprocessor
+Built simulation snapshot TB_nanoprocessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_nanoprocessor_behav -key {Behavioral:sim_1:Functional:TB_nanoprocessor} -tclbatch {TB_nanoprocessor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source TB_nanoprocessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_nanoprocessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri May 16 11:16:58 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 11:20:02 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1985.078 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1985.078 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_nanoprocessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_nanoprocessor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/Instruction_Decorder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Instruction_Decoder
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 701096fe2465408e8a455c8cce45f39a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_nanoprocessor_behav xil_defaultlib.TB_nanoprocessor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegBank [regbank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8way_4bit [mux_8way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_Subtractor [adder_subtractor_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_4bit [mux_2way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture structural of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_3 [rca_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_3bit [mux_2way_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.LUT_16_7 [lut_16_7_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nanoprocessor
+Built simulation snapshot TB_nanoprocessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_nanoprocessor_behav -key {Behavioral:sim_1:Functional:TB_nanoprocessor} -tclbatch {TB_nanoprocessor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source TB_nanoprocessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_nanoprocessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri May 16 11:27:06 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 11:29:59 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1998.371 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1998.371 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_nanoprocessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_nanoprocessor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROM
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 701096fe2465408e8a455c8cce45f39a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_nanoprocessor_behav xil_defaultlib.TB_nanoprocessor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegBank [regbank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8way_4bit [mux_8way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_Subtractor [adder_subtractor_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_4bit [mux_2way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture structural of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_3 [rca_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_3bit [mux_2way_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.LUT_16_7 [lut_16_7_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nanoprocessor
+Built simulation snapshot TB_nanoprocessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_nanoprocessor_behav -key {Behavioral:sim_1:Functional:TB_nanoprocessor} -tclbatch {TB_nanoprocessor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source TB_nanoprocessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_nanoprocessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri May 16 11:39:05 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 11:40:00 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 2004.520 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 2004.520 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_nanoprocessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_nanoprocessor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROM
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 701096fe2465408e8a455c8cce45f39a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_nanoprocessor_behav xil_defaultlib.TB_nanoprocessor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegBank [regbank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8way_4bit [mux_8way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_Subtractor [adder_subtractor_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_4bit [mux_2way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture structural of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_3 [rca_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_3bit [mux_2way_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.LUT_16_7 [lut_16_7_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nanoprocessor
+Built simulation snapshot TB_nanoprocessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_nanoprocessor_behav -key {Behavioral:sim_1:Functional:TB_nanoprocessor} -tclbatch {TB_nanoprocessor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source TB_nanoprocessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_nanoprocessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri May 16 11:44:43 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 11:48:12 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2007.719 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2007.719 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_nanoprocessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_nanoprocessor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/Instruction_Decorder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Instruction_Decoder
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 701096fe2465408e8a455c8cce45f39a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_nanoprocessor_behav xil_defaultlib.TB_nanoprocessor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegBank [regbank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8way_4bit [mux_8way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_Subtractor [adder_subtractor_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_4bit [mux_2way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture structural of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_3 [rca_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_3bit [mux_2way_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.LUT_16_7 [lut_16_7_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nanoprocessor
+Built simulation snapshot TB_nanoprocessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_nanoprocessor_behav -key {Behavioral:sim_1:Functional:TB_nanoprocessor} -tclbatch {TB_nanoprocessor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source TB_nanoprocessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_nanoprocessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+add_files -norecurse -scan_for_includes {{C:/Users/sudil/Desktop/Nano2 after all updates/Nano2/Nano2.srcs/sources_1/new/D_FF.vhd} {C:/Users/sudil/Desktop/Nano2 after all updates/Nano2/Nano2.srcs/sources_1/new/PC_Incrementer.vhd} {C:/Users/sudil/Desktop/Nano2 after all updates/Nano2/Nano2.srcs/sources_1/new/PC_Control.vhd}}
+import_files -norecurse {{C:/Users/sudil/Desktop/Nano2 after all updates/Nano2/Nano2.srcs/sources_1/new/D_FF.vhd} {C:/Users/sudil/Desktop/Nano2 after all updates/Nano2/Nano2.srcs/sources_1/new/PC_Incrementer.vhd} {C:/Users/sudil/Desktop/Nano2 after all updates/Nano2/Nano2.srcs/sources_1/new/PC_Control.vhd}}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes {{C:/Users/sudil/Desktop/Nano2 after all updates/Nano2/Nano2.srcs/sim_1/new/TB_ProgramCounter.vhd}}
+import_files -fileset sim_1 -norecurse {{C:/Users/sudil/Desktop/Nano2 after all updates/Nano2/Nano2.srcs/sim_1/new/TB_ProgramCounter.vhd}}
+update_compile_order -fileset sim_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'D_FF(Behavioral)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 34 of file C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/imports/new/D_FF.vhd
+Duplicate found in file C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/D_FF.vhd
+[Fri May 16 11:58:08 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 11:58:37 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2167.516 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2167.516 ; gain = 0.000
+export_ip_user_files -of_objects  [get_files C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/D_FF.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/D_FF.vhd
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri May 16 12:04:03 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 12:04:38 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 2178.191 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 2178.191 ; gain = 0.000
+export_ip_user_files -of_objects  [get_files C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sim_1/new/TB_ProgramCounter.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sim_1/new/TB_ProgramCounter.vhd
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri May 16 12:05:44 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 12:06:10 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 2186.039 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 2186.039 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_nanoprocessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_nanoprocessor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/imports/new/D_FF.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity D_FF
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROM
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 701096fe2465408e8a455c8cce45f39a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_nanoprocessor_behav xil_defaultlib.TB_nanoprocessor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegBank [regbank_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_8way_4bit [mux_8way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_Subtractor [adder_subtractor_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_4bit [mux_2way_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture structural of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_3 [rca_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2way_3bit [mux_2way_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.LUT_16_7 [lut_16_7_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_nanoprocessor
+Built simulation snapshot TB_nanoprocessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sudil/Music/Nano2t/Nano2/Nano2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_nanoprocessor_behav -key {Behavioral:sim_1:Functional:TB_nanoprocessor} -tclbatch {TB_nanoprocessor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source TB_nanoprocessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_nanoprocessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Fri May 16 12:12:18 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri May 16 12:12:47 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 2187.051 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 2187.051 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri May 16 12:13:57 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sudil/Music/Nano2t/Nano2/Nano2.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 16 12:15:09 2025...

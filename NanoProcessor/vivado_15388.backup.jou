@@ -1,0 +1,166 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri May 16 09:15:12 2025
+# Process ID: 15388
+# Current directory: C:/Users/sudil/Music/Nano2t/Nano2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5608 C:\Users\sudil\Music\Nano2t\Nano2\Nano2.xpr
+# Log file: C:/Users/sudil/Music/Nano2t/Nano2/vivado.log
+# Journal file: C:/Users/sudil/Music/Nano2t/Nano2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sudil/Music/Nano2t/Nano2/Nano2.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+launch_simulation
+source TB_nanoprocessor.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+close_sim
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+launch_simulation
+source TB_nanoprocessor.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+close_sim
+launch_simulation
+source TB_nanoprocessor.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+close_sim
+launch_simulation
+source TB_nanoprocessor.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+close_sim
+launch_simulation
+source TB_nanoprocessor.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+close_sim
+launch_simulation
+source TB_nanoprocessor.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+close_sim
+launch_simulation
+source TB_nanoprocessor.tcl
+close_sim
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+launch_simulation
+source TB_nanoprocessor.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+close_sim
+launch_simulation
+source TB_nanoprocessor.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+close_sim
+launch_simulation
+source TB_nanoprocessor.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+close_sim
+launch_simulation
+source TB_nanoprocessor.tcl
+add_files -norecurse -scan_for_includes {{C:/Users/sudil/Desktop/Nano2 after all updates/Nano2/Nano2.srcs/sources_1/new/D_FF.vhd} {C:/Users/sudil/Desktop/Nano2 after all updates/Nano2/Nano2.srcs/sources_1/new/PC_Incrementer.vhd} {C:/Users/sudil/Desktop/Nano2 after all updates/Nano2/Nano2.srcs/sources_1/new/PC_Control.vhd}}
+import_files -norecurse {{C:/Users/sudil/Desktop/Nano2 after all updates/Nano2/Nano2.srcs/sources_1/new/D_FF.vhd} {C:/Users/sudil/Desktop/Nano2 after all updates/Nano2/Nano2.srcs/sources_1/new/PC_Incrementer.vhd} {C:/Users/sudil/Desktop/Nano2 after all updates/Nano2/Nano2.srcs/sources_1/new/PC_Control.vhd}}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes {{C:/Users/sudil/Desktop/Nano2 after all updates/Nano2/Nano2.srcs/sim_1/new/TB_ProgramCounter.vhd}}
+import_files -fileset sim_1 -norecurse {{C:/Users/sudil/Desktop/Nano2 after all updates/Nano2/Nano2.srcs/sim_1/new/TB_ProgramCounter.vhd}}
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+export_ip_user_files -of_objects  [get_files C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/D_FF.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sources_1/new/D_FF.vhd
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+export_ip_user_files -of_objects  [get_files C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sim_1/new/TB_ProgramCounter.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/sudil/Music/Nano2t/Nano2/Nano2.srcs/sim_1/new/TB_ProgramCounter.vhd
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+close_sim
+launch_simulation
+source TB_nanoprocessor.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_sim
